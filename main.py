@@ -52,7 +52,5 @@ def hasduplicates(A):
     return not same(set(A), A)
 
 
-A = [-2, 0, 2]
-B = [4, 6, 8 ]
-rel = lambda x, y: ((x - y)/ 4).is_integer()
-print(relation(A, B, rel))
+Z = create_set([-100, 100], lambda d: d != 0 and (6/d).is_integer())
+print(Z)
